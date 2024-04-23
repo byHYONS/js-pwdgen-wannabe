@@ -11,15 +11,15 @@ const userSurname = prompt('inserisci il tuo cognome');
 const preferredColor = prompt('inserisci il tuo colore preferito');
 
 // BONUS • randomizzo il numero
-
+let numberRandom = Math.floor(Math.random() * 100);
 
 // concateno il testo HTML con costanti importate dall'user
-currentText = `${currentText} ${userName} ${userSurname} e il mio colore preferito è il ${preferredColor}`;
+currentText = `${currentText} ${userName} ${userSurname}, il mio colore preferito è il ${preferredColor} e il mio numero fortunato è il ${numberRandom}`;
 
 // stampo su HTML il risultato
-currentModule.innerHTML = currentText
+currentModule.innerHTML = currentText;
 
 // BONUS •  stampo in console il risultato
-
+console.log(currentText);
 
 
